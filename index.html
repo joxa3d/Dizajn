@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dizajn</title>
+    <style>
+        body {
+            color: #044c75;
+            font-size: 1.3em;
+        }
+        #wrapper {
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        #box1 {
+            width: 600px;
+            height: 800px;
+            background-image: linear-gradient(to right top, #33dd99, #27d09c, #24c49d, #29b79c, #33aa99);
+            flex: 1 45%;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+        #box1 p {
+            padding-top: 50%;
+            margin-left: 15%;
+            color: white;
+        }
+        #box2 {
+            flex: 2 46%;
+            margin-top: 11%;
+            margin-left: 7%;
+        }
+        #box2 h2 {
+            margin-bottom: 0;
+            font-size: 2em;
+        }
+        #box2 p {
+            margin-top: 0;
+        }
+        .radio input[type="radio"] {
+            display: none;
+        }
+        .radio label {
+            display: inline-block;
+            background-color: white;
+            padding: 4px 11px;
+            font-size: 2em;
+            cursor: pointer;
+            border: 2px solid #044c75;
+            border-radius: 4% 24%;
+            margin-right: 4%;
+            color: #044c75;
+        }
+        .radio input[type="radio"]:checked+label {
+            background-image: linear-gradient(to right top, #33dd99, #27d09c, #24c49d, #29b79c, #33aa99);
+            color: white;
+            border: #33aa99;
+        }
+        input[type="text"],
+        input[type="password"] {
+            background-color: white;
+            padding: 4px 11px;
+            font-size: 2em;
+            border: 2px solid #044c75;
+            border-radius: 8px;
+            color: #044c75;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            background-image: linear-gradient(to right top, #33dd99, #27d09c, #24c49d, #29b79c, #33aa99);
+            color: white;
+            border: #33aa99
+        }
+        input[type="button"] {
+            margin: 5% 31%;
+            background-image: linear-gradient(to right top, #33dd99, #27d09c, #24c49d, #29b79c, #33aa99);
+            border: 2px solid #33aa99;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.5em;
+            padding: 1%;
+            transition: all 0.8s ease;
+        } 
+        input[type="button"]:hover,
+        input[type="button"]:active {
+            background: white;
+            border-color: #044c75;
+            color: #044c75;
+            transition: all 0.8s ease;
+        }
+        #form {
+            margin-top: 2% !important;
+            margin-bottom: 7px;
+            font-size: 1.5em;
+            color: #044c75;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="box1">
+           <img src="MaleckaBela.gif" alt="Italian Trulli">
+        </div>
+
+        <div id="box2">
+            <h2>Choose </br> your avatar</h2>
+            <p>you need to be logged in</p>
+            <form action="">
+                    <div class="radio">
+                        <input type="radio" id="radio1" name="radios" value="Male" checked>
+                        <label for="radio1">Male</label>
+                        
+                        <input type="radio" id="radio2" name="radios" value="Female">
+                        <label for="radio2">Female</label>
+                    </div>
+                    <p id="form">E&minus;mail:</p>
+                    <input type="text" name="email"> </br>
+                    <p id="form">Password:</p>
+                    <input type="password" name="pass"> </br>
+                    <input type="button" value="Login">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
